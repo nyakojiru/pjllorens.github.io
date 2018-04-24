@@ -1,0 +1,130 @@
+body{
+	background: rgb(147, 238, 223);
+}
+
+#Titulo {
+	color: #67BE9B;
+	font-family: 'Six Caps';
+	font-size: 100px;
+	font-weight: 400;
+	line-height: 180px;
+	letter-spacing: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+	text-indent: 10px;
+	text-transform: uppercase;
+}
+
+#Nombre {
+	color: #54534F;
+	font-family: 'Merriweather';
+	font-size: 30px;
+}
+
+#Avatar{
+	border-radius: 50%;
+	margin: 0 auto;
+	display: block;
+}
+
+.Subtitulo{
+	color: #54534F;
+	font-family: 'Merriweather';
+	font-size: 18px
+}
+
+.Box{
+	color: #54534F;
+	font-family: 'Merriweather';
+	font-size: 12px;
+	margin: 1%;
+	padding: 2%;
+	background-color: rgb(207, 245, 240);
+}
+
+.Boxm{
+	color: #54534F;
+	font-family: 'Merriweather';
+	font-size: 12px;
+	margin: 1%;
+	padding: 1%;
+	background-color: rgb(129, 209, 199);
+}
+
+.Listas{
+  list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.img1{
+	float:left;
+	width:120px;
+}
+
+.Informacion{
+	width: 60%;
+	float:right;
+}
+
+.Formacion{
+	width: 60%;
+	float:right;
+}
+
+.Experiencia{
+	width: 60%;
+	float:right;
+}
+
+.Portfolio{
+	width: 60%;
+	float:right;
+}
+
+.Perfil{
+	float:left;
+	width:28%;
+	position: fixed;
+	background-color:#72c9a1
+}
+
+.Menu{
+	float:left;
+	width:30%;
+	clear: left;
+	position: fixed;
+	top:300px;
+}
+
+.Menu:link {
+    background-color: yellow;
+		color: #54534F;
+}
+
+.Menu:visited {
+    background-color: cyan;
+}
+
+.Menu:hover {
+    background-color: lightgreen;
+}
+
+a{
+	color: #54534F;
+	text-decoration: no;
+}
+
+#menu2{
+	top:400px;
+
+}
+
+#menu3{
+	top:500px;
+}
+
+#menu4{
+	top:600px;
+}
