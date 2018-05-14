@@ -1,5 +1,5 @@
 // Arreglo que contiene las intrucciones del juego
-var instrucciones = ["Utilizando las flechas del teclado, cambia el orden de las fichas hasta lograr el objetivo!."];
+var instrucciones = ["Utilizando las flechas del teclado, cambia el orden de las fichas.", "Hacelo hasta lograr el objetivo! :)"];
 // Arreglo para ir guardando los movimientos que se vayan realizando
 var movimientos = [];
 
@@ -26,8 +26,10 @@ var columnaVacia = 2;
 Cada elemento de este arreglo deberá ser mostrado en la lista con id 'lista-instrucciones'.
 Para eso deberás usar la función ya implementada mostrarInstruccionEnLista().
 Podés ver su implementación en la ultima parte de este codigo. */
-function mostrarInstrucciones() {
-  mostrarInstruccionEnLista(instrucciones, "lista-instrucciones");
+function mostrarInstrucciones(instrucciones) {
+  for (var i = 0; i < instrucciones.length; i++){
+    mostrarInstruccionEnLista(instrucciones[i], "lista-instrucciones");
+  }
 }
 
 /* COMPLETAR: Crear función que agregue la última dirección al arreglo de movimientos
