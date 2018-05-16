@@ -60,22 +60,55 @@ var grillaPixeles = function(){
   for (var i = 0; i < 1750; i++) {
     var nuevoDiv = document.createElement('div');
     pixelesId.appendChild(nuevoDiv);
-    nuevoDiv.addEventListener("mouseover", function(event){
+    nuevoDiv.addEventListener("mousemove", function(event){
       if (estadoMouse === 1){
         var colorPixel = document.getElementById("indicador-de-color").style.backgroundColor;
         var celdaPixel = event.target;
         celdaPixel.style.backgroundColor = colorPixel;
       }
     });
+    nuevoDiv.addEventListener("click", function(event){
+      var colorPixel = document.getElementById("indicador-de-color").style.backgroundColor;
+      var celdaPixel = event.target;
+      celdaPixel.style.backgroundColor = colorPixel;
+    });
   }
 }
 
+// Eventos
 document.body.addEventListener("mousedown", function(){
   estadoMouse = 1;
 });
 
 document.body.addEventListener("mouseup", function(){
   estadoMouse = 0;
+});
+
+$(document).ready(function(){
+  $("#borrar").click(function(){
+    $("#grilla-pixeles").children().animate({"backgroundColor": "#FFFFFF"}, 500);
+  });
+});
+
+$(document).ready(function(){
+  $("#batman").click(function(){
+    cargarSuperheroe(batman);
+  });
+  $("#wonder").click(function(){
+    cargarSuperheroe(wonder);
+  });
+  $("#flash").click(function(){
+    cargarSuperheroe(flash);
+  });
+  $("#invisible").click(function(){
+    cargarSuperheroe(invisible);
+  });
+});
+
+$(document).ready(function(){
+  $("#guardar").click(function(){
+    guardarPixelArt();
+  });
 });
 
 // Invocando funciones

@@ -6,7 +6,7 @@
 
 body {
   text-align: center;
-  background-color: black;
+  background-color: #222831;
 }
 
 /* Estos divs son los pixeles */
@@ -24,10 +24,10 @@ div {
 }
 
 button {
-  background: lightgrey;
+  background: #00ADB5;
   border: none;
   border-radius: 20px;
-  color: black;
+  color: #222831;
   font-family: 'Press Start 2P';
   font-size: .7em;
   line-height: 30px;
@@ -39,7 +39,7 @@ button {
   cursor: pointer;
 }
 button:hover{
-  background: grey;
+  background: #EEEEEE;
 }
 ul {
   list-style: none;
@@ -53,14 +53,14 @@ p {
   text-align: right;
 }
 h1 {
-  color: white;
+  color: #EEEEEE;
   margin-bottom: 15px;
   margin-top: 10px;
   font-family: 'Press Start 2P';
 }
 
 h3 {
-  color: white;
+  color: #EEEEEE;
   margin-bottom: 15px;
   margin-top: 10px;
   font-family: 'Press Start 2P';
